@@ -126,7 +126,7 @@ class OrderManager:
             print ("Hiện chưa có đơn hàng nào.")
         else:
             found = False
-            del_id = check_space("Nhập mã cần sửa: ")
+            del_id = check_space("Nhập mã cần xóa: ")
             for o in self.orders:
                 if del_id.strip().upper() == o.order_id:
                     found = True
